@@ -1,0 +1,37 @@
+# .bashrc
+
+# User specific aliases and functions
+
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+#
+# Sfecific configuration
+#
+export PS1='\[\e[34;1m\][\u@\h\[\e[33;1m\] \w]\$ \[\e[m\]'
+
+
+#
+# DNS Server Alias
+#
+alias named.conf='vi /etc/named.conf'
+alias named.rfc1912.zones='vi /etc/named.rfc1912.zones' 
+alias DNS='cd /var/named'
+alias dnslog='tail -f /var/log/messages'
+
+#
+# DNS Alias
+#
+alias named.conf='vi /etc/named.conf'
+alias named.rfc1912.zones='vi /etc/named.rfc1912.zones' 
+alias DNS='cd /var/named'
+alias dnslog='tail -f /var/log/messages'
+
+alias code='code --no-sandbox --user-data-dir ~/workspace'
+alias aa='chmod 700 /root/bin/*.sh'
